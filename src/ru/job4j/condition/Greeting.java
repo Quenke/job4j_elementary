@@ -9,8 +9,5 @@ public class Greeting {
         int year = 2020;
 
         System.out.println (idea + separate + year);
-
-
-
-    }
+   }
 }
