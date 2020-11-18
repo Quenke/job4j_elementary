@@ -9,6 +9,7 @@ public class Point {
         double fourth = Math.pow(second, 2);
         double fifth = third + fourth;
         double sixth = Math.sqrt(fifth);
+        rsl = sixth;
         return rsl;
     }
 
