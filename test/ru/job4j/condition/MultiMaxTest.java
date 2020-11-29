@@ -25,4 +25,14 @@ public class MultiMaxTest {
         int result = MultiMax.max(1, 1, 1);
         assertThat(result, is(1));
     }
+    @Test
+    public void whensecondandthirdmax() {
+        int result = MultiMax.max(1, 4, 4);
+        assertThat(result, is(4));
+    }
+    @Test
+    public void whenfirstandthirdmax() {
+        int result = MultiMax.max(5, 1, 5);
+        assertThat(result, is(5));
+    }
 }
