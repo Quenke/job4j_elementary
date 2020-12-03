@@ -1,7 +1,37 @@
 package ru.job4j;
 
 public class Main {
-    public static void main(String [] args) {
-        System.out.println("Hello world");
+    public String nameOfDay(int day) {
+        String name;
+        switch (day) {
+            case 1:
+                name = "Понедельник";
+                break;
+            case 2:
+                name = "Вторник";
+                break;
+            case 3:
+                name = "Среда";
+                break;
+            case 4:
+                name = "Четверг";
+                break;
+            case 5:
+                name = "Пятница";
+                break;
+            case 6:
+                name = "Суббота";
+                break;
+            case 7:
+                name = "Воскресенье";
+                break;
+            default:
+                name = "ошибка";
+                break;
+        }
+        return name;
+
+
     }
+
 }
