@@ -6,13 +6,9 @@ public class Loop {
         for (int index = 0; index < numbers.length; index++) {
             numbers[index] = index * 2 + 3;
         }
-        for (int index = 0; index < numbers.length; index++) {
-            System.out.println(numbers[index]);
-        }
-        System.out.println();
         for (int number : numbers) {
             System.out.println(number);
-        }
 
+        }
     }
 }
