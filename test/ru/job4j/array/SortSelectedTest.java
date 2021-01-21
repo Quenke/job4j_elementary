@@ -12,12 +12,18 @@ public class SortSelectedTest {
         int[] expect = new int[]{1, 2, 3, 4, 5};
         assertThat(result, is(expect));
     }
-
     @Test
-    public void whenSorttoo() {
+    public void whenSortfive() {
         int[] input = new int[]{9, 5, 7, 6, 8};
         int[] result = SortSelected.sort(input);
         int[] expect = new int[]{5, 6, 7, 8, 9};
+        assertThat(result, is(expect));
+    }
+    @Test
+    public void whenSortthree() {
+        int[] input = new int[]{6, 5, 4};
+        int[] result = SortSelected.sort(input);
+        int[] expect = new int[]{4, 5, 6};
         assertThat(result, is(expect));
     }
 }
