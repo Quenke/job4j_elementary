@@ -5,9 +5,11 @@ public class Defragment {
         for (int index = 0; index < array.length; index++) {
             if (array[index] == null) {
                 int point = index; /* указатель на null ячейку. */
-                for (int nullIndex = array.length - 1; nullIndex >= 0; nullIndex--) {
-                    for (int notNullIndex = nullIndex + 1; notNullIndex < array.length; notNullIndex++) {
-                        if (index == nullIndex)  {
+                for (int nullIndex = 0; nullIndex < array.length - 1; nullIndex++) {
+                    for (int notNullIndex = array.length - 1; notNullIndex > nullIndex; notNullIndex--) {
+                        if (nullIndex == point)  {
+
+
                             Defragment.swap(array, nullIndex, notNullIndex);
                         }
                     }
