@@ -5,8 +5,8 @@ public class Defragment {
         for (int index = 0; index < array.length; index++) {
             if (array[index] == null) {
                 int point = index; /* указатель на null ячейку. */
-                for (int nullIndex = 0; nullIndex < array.length ; nullIndex++) {
-                    for (int notNullIndex = 0; notNullIndex < array.length; notNullIndex++) {
+                for (int nullIndex = array.length - 1; nullIndex >= 0; nullIndex--) {
+                    for (int notNullIndex = nullIndex + 1; notNullIndex < array.length; notNullIndex++) {
                         if (index == nullIndex)  {
                             Defragment.swap(array, nullIndex, notNullIndex);
                         }
@@ -26,8 +26,8 @@ public class Defragment {
             System.out.print(compressed[index] + " ");
         }
     }
-    public static int[] swap(int[] array, int source, int dest) {
-        int temp = array[source];
+    public static String [] swap(String[] array, int source, int dest) {
+        String temp = array[source];
         array[source] = array[dest];
         array[dest] = temp;
         return array;
