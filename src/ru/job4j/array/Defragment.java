@@ -5,15 +5,9 @@ public class Defragment {
         for (int index = 0; index < array.length; index++) {
             if (array[index] == null) {
                 int point = index; /* указатель на null ячейку. */
-                for (int nullIndex = 0; nullIndex < array.length - 1; nullIndex++) {
-                    for (int notNullIndex = array.length - 1; notNullIndex > nullIndex; notNullIndex--) {
-                        if (nullIndex == point)  {
-
-
-                            Defragment.swap(array, nullIndex, notNullIndex);
-                        }
+                for (int nullIndex = array.length - 1; nullIndex > index; nullIndex--) {
+                            Defragment.swap(array, nullIndex, index);
                     }
-                }
             }
             System.out.print(array[index] + " ");
         }
