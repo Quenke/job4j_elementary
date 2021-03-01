@@ -19,4 +19,10 @@ public class MachineTest {
         int[] rsl = Machine.change(50, 35);
         assertThat(rsl, is(expected));
     }
+    @Test
+    public void when100by24() {
+        int[] expected = {10, 10, 10, 10, 10, 10, 10, 5, 1};
+        int[] rsl = Machine.change(100, 24);
+        assertThat(rsl, is(expected));
+    }
 }
