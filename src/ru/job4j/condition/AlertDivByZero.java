@@ -5,7 +5,6 @@ public class AlertDivByZero {
         possibleDiv(0);
         possibleDiv(-1);
     }
-
     public static void possibleDiv(int number) {
         boolean result = number == 0;
         boolean result1 = number < 0;
@@ -15,6 +14,5 @@ public class AlertDivByZero {
             if (result1) {
                 System.out.println("This is negative numbers.");
             }
-
     }
 }

@@ -8,7 +8,6 @@ public class Loop {
         }
         for (int number : numbers) {
             System.out.println(number);
-
         }
     }
 }

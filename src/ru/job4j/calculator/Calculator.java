@@ -15,8 +15,5 @@ public class Calculator {
         System.out.println(sixDivtwo);
         System.out.println(fiveMinustwo);
         System.out.println(fourTimetwo);
-
-
-
     }
 }

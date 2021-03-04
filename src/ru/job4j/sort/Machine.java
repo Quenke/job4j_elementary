@@ -13,7 +13,6 @@ public class Machine {
               sum -= coins[index];
               rsl [size] = coins[index];
               size++;
-
             }
         }
         return Arrays.copyOf(rsl, size);

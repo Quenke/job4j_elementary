@@ -5,17 +5,5 @@ public class ChessBoard {
             boolean condition = Math.abs(x1 - x2) == Math.abs(y1 - y2);
             int rsl = condition ? Math.abs(y2 - y1) : 0;
             return rsl;
-
-
-           /*return Math.abs(x1 - x2) == Math.abs(y1 - y2);*/
-
-
-
-            /*if (Math.abs(x1 - x2) == Math.abs(y1 - y2))  {
-                rsl = Math.abs(x2 - x1);
-                rsl = rsl == 1 ? Math.abs(y2 - y1) : rsl;
-            }*/
-            /*return rsl;*/
-        }
-
+                 }
 }

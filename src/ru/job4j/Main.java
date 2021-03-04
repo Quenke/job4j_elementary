@@ -30,8 +30,5 @@ public class Main {
                 break;
         }
         return name;
-
-
     }
-
 }

@@ -6,5 +6,4 @@ public class Max {
         int result = condition ? left : right;
         return result;
     }
-
 }

@@ -5,7 +5,6 @@ public class SeqNumber {
         calc(6);
         calc(5);
     }
-
     public static void calc(int n) {
         int hold = 0;
         for (int index = 1; index <= n; index++) {

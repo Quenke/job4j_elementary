@@ -8,6 +8,5 @@ public class LengthArrayArrays {
                     "Размер вложенного массива равен: " + numbers[i].length
             );
         }
-
     }
 }
